@@ -12,19 +12,19 @@ export default new VueRouter({
 		},
 		{
 			path: '/login',
-			component: () => import('@/views/LoginPage'),
+			component: () => import('@/views/LoginPage.vue'),
 		},
 		{
 			path: '/signup',
-			component: () => import('@/views/SignupPage'),
+			component: () => import('@/views/SignupPage.vue'),
 		},
 		{
 			path: '/main',
-			component: () => import('@/views/MainPage'),
+			component: () => import('@/views/MainPage.vue'),
 		},
 		{
 			path: '*',
-			component: () => import('@/views/PageNotFound'),
+			component: () => import('@/views/NotFoundPage.vue'),
 		},
 	],
 });
